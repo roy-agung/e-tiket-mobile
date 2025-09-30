@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:tiket_app/bukti_pembayaran.dart';
 
 class Pembayaran extends StatefulWidget {
   final String jenisTiket;
@@ -17,7 +18,6 @@ class Pembayaran extends StatefulWidget {
 }
 
 class _PembayaranState extends State<Pembayaran> {
-  State<Pembayaran> createState() => _PembayaranState();
 
   //ALERT TUNAI
   void _showTNDialog(BuildContext context) {
@@ -76,11 +76,24 @@ class _PembayaranState extends State<Pembayaran> {
                   borderRadius: BorderRadius.circular(20),
                   color: Color.fromARGB(255, 0, 102, 255),
                 ),
-                child: Center(
-                  child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w500, 
-                    color: Colors.white, 
-                    fontSize: 18),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BuktiPembayaran(
+                      jenisTiket: widget.jenisTiket,
+                      namaTiket: widget.namaTiket,
+                      harga: widget.harga,
+                      metodePembayaran: "Tunai",
+                    ),
+                    ),
+                    );
+                  },
+                  child: Center(
+                    child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500, 
+                      color: Colors.white, 
+                      fontSize: 18),
+                    ),
                   ),
                 )
               ),
@@ -164,11 +177,24 @@ void _showKKDialog(BuildContext context) {
                   borderRadius: BorderRadius.circular(20),
                   color: Color.fromARGB(255, 0, 102, 255),
                 ),
-                child: Center(
-                  child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w500, 
-                    color: Colors.white, 
-                    fontSize: 18),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BuktiPembayaran(
+                      jenisTiket: widget.jenisTiket,
+                      namaTiket: widget.namaTiket,
+                      harga: widget.harga,
+                      metodePembayaran: "Debit",
+                    ),
+                    ),
+                    );
+                  },
+                  child: Center(
+                    child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500, 
+                      color: Colors.white, 
+                      fontSize: 18),
+                    ),
                   ),
                 )
               ),
@@ -238,11 +264,24 @@ void _showKKDialog(BuildContext context) {
                   borderRadius: BorderRadius.circular(20),
                   color: Color.fromARGB(255, 0, 102, 255),
                 ),
-                child: Center(
-                  child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
-                    fontWeight: FontWeight.w500, 
-                    color: Colors.white, 
-                    fontSize: 18),
+                child: GestureDetector(
+                  onTap: () {
+                    Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => BuktiPembayaran(
+                      jenisTiket: widget.jenisTiket,
+                      namaTiket: widget.namaTiket,
+                      harga: widget.harga,
+                      metodePembayaran: "QRIS",
+                    ),
+                    ),
+                    );
+                  },
+                  child: Center(
+                    child: Text("Konfirmasi Pembayaran", style: GoogleFonts.poppins(
+                      fontWeight: FontWeight.w500, 
+                      color: Colors.white, 
+                      fontSize: 18),
+                    ),
                   ),
                 )
               ),
