@@ -27,23 +27,23 @@ class ListTiket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 102, 255),
+      backgroundColor: const Color.fromARGB(255, 0, 102, 255),
       appBar: AppBar(
         centerTitle: true,
         title: Text("Ticketing App", style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 24),
         ),
         ),
-      body: Padding(padding: EdgeInsets.only(top: 5, bottom: 15),
+      body: Padding(padding: const EdgeInsets.only(top: 5, bottom: 15),
       child: ListView.builder(
             itemCount: listTiket.length,
             itemBuilder: (context, index){
               final tiket = listTiket[index];
               return Padding(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Container(
               height: 145,
               width: double.infinity,
-              padding: EdgeInsets.all(11),
+              padding: const EdgeInsets.all(11),
               decoration: BoxDecoration(
               borderRadius:  BorderRadius.circular(20),
               color: Colors.white,
@@ -56,13 +56,13 @@ class ListTiket extends StatelessWidget {
                 Text(tiket.jenisTiket, textAlign: TextAlign.left, style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize: 16, color: Colors.grey[600]
                 ),
                 ),
-                SizedBox(height: 15), 
+                const SizedBox(height: 15), 
                 Row(
                   children: [
-                    Text(tiket.harga, style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize:20, color: Color.fromARGB(255, 35, 106, 229),
+                    Text(tiket.harga, style: GoogleFonts.poppins(fontWeight: FontWeight.bold, fontSize:20, color: const Color.fromARGB(255, 35, 106, 229),
                     ),
                     ),
-                Spacer(),
+                const Spacer(),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(
@@ -77,20 +77,20 @@ class ListTiket extends StatelessWidget {
                     );
                   },
                   child: Container(
-                    padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
+                    padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
                     decoration: BoxDecoration(
-                      color: Color.fromARGB(255, 35, 106, 229),
+                      color: const Color.fromARGB(255, 35, 106, 229),
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Row(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        Icon(
+                        const Icon(
                           Icons.shopping_cart,
                           color: Colors.white,
                           size: 14,
                         ),
-                        SizedBox(width: 5),
+                        const SizedBox(width: 5),
                         Text("Beli", style: GoogleFonts.poppins(color: Colors.white, fontSize: 14, fontWeight: FontWeight.bold
                         ),
                       ),

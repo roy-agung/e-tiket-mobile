@@ -8,8 +8,8 @@ class Welcome extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 102, 255),
-      body: Padding(padding: EdgeInsets.symmetric(horizontal: 30,),
+      backgroundColor: const Color.fromARGB(255, 0, 102, 255),
+      body: Padding(padding: const EdgeInsets.symmetric(horizontal: 30,),
       child: Column( 
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.center,
@@ -17,18 +17,18 @@ class Welcome extends StatelessWidget {
           Container(
             height: 300,
             width: double.infinity,
-            decoration: BoxDecoration(
+            decoration: const BoxDecoration(
               image: DecorationImage(
                 image: AssetImage("assets/images/welcome.png"),
               ),
             ),
           ),
 
-          SizedBox(height: 50),
+          const SizedBox(height: 50),
           Container(
             height: 250,
               width: double.infinity,
-                padding: EdgeInsets.all(11),
+                padding: const EdgeInsets.all(11),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(40),
                       color: Colors.white,
@@ -43,7 +43,7 @@ class Welcome extends StatelessWidget {
                 style: GoogleFonts.poppins(fontSize: 24,
                 color: Colors.grey[600]),
                 ),
-                SizedBox(height: 20),
+                const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
                     Navigator.push(context,

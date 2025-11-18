@@ -30,7 +30,7 @@ class _PembayaranState extends State<Pembayaran> {
             
           ),
           child: Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -38,17 +38,17 @@ class _PembayaranState extends State<Pembayaran> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Pembayaran Tunai", style: GoogleFonts.poppins(
-                    color: Color.fromARGB(255, 0, 102, 255),
+                    color: const Color.fromARGB(255, 0, 102, 255),
                     fontSize: 20, 
                     fontWeight: FontWeight.bold),
                   ),
                   IconButton(
-                    icon: Icon(Icons.close),
+                    icon: const Icon(Icons.close),
                     onPressed: () => Navigator.pop(context),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 width: 200,
                 height: 200,
@@ -58,23 +58,23 @@ class _PembayaranState extends State<Pembayaran> {
                 ),
                 child: Image.asset("assets/icons/duit.png", fit: BoxFit.contain),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Text("Pembayaran Tunai", style: GoogleFonts.poppins(
                 fontWeight: FontWeight.bold, 
                 fontSize: 18),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Text("Jika pembayaran telah diterima, klik button Konfirmasi Pembayaran untuk menyelesaikan transaksi",
               style: GoogleFonts.poppins(fontSize: 15, color: Colors.grey[600]),
               textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 0, 102, 255),
+                  color: const Color.fromARGB(255, 0, 102, 255),
                 ),
                 child: GestureDetector(
                   onTap: () {
@@ -117,7 +117,7 @@ void _showKKDialog(BuildContext context) {
             
           ),
           child: Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -125,17 +125,17 @@ void _showKKDialog(BuildContext context) {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Pembayaran Debit", style: GoogleFonts.poppins(
-                    color: Color.fromARGB(255, 0, 102, 255),
+                    color: const Color.fromARGB(255, 0, 102, 255),
                     fontSize: 20, 
                     fontWeight: FontWeight.bold),
                   ),
                   IconButton(
-                    icon: Icon(Icons.close),
+                    icon: const Icon(Icons.close),
                     onPressed: () => Navigator.pop(context),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 width: 200,
                 height: 200,
@@ -145,11 +145,11 @@ void _showKKDialog(BuildContext context) {
                 ),
                 child: Image.asset("assets/icons/kredit.png", fit: BoxFit.contain),
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 width: 250,
                 height: 50,
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 decoration: BoxDecoration(
                   border: Border.all(color: Colors.blueAccent),
                   borderRadius: BorderRadius.circular(10),
@@ -159,23 +159,23 @@ void _showKKDialog(BuildContext context) {
                   
                 ),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Text("Transfer Untuk Membayar", style: GoogleFonts.poppins(
                 fontWeight: FontWeight.bold, 
                 fontSize: 18),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Text("Pastikan nominal dan tujuan pembayaran sudah benar sebelum melanjutkan",
               style: GoogleFonts.poppins(fontSize: 15, color: Colors.grey[600]),
               textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 0, 102, 255),
+                  color: const Color.fromARGB(255, 0, 102, 255),
                 ),
                 child: GestureDetector(
                   onTap: () {
@@ -218,7 +218,7 @@ void _showKKDialog(BuildContext context) {
             
           ),
           child: Container(
-            padding: EdgeInsets.all(20),
+            padding: const EdgeInsets.all(20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
@@ -226,17 +226,17 @@ void _showKKDialog(BuildContext context) {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text("Pembayaran QRIS", style: GoogleFonts.poppins(
-                    color: Color.fromARGB(255, 0, 102, 255),
+                    color: const Color.fromARGB(255, 0, 102, 255),
                     fontSize: 20, 
                     fontWeight: FontWeight.bold),
                   ),
                   IconButton(
-                    icon: Icon(Icons.close),
+                    icon: const Icon(Icons.close),
                     onPressed: () => Navigator.pop(context),
                   ),
                 ],
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 width: 200,
                 height: 200,
@@ -246,23 +246,23 @@ void _showKKDialog(BuildContext context) {
                 ),
                 child: Image.asset("assets/icons/QR.png", fit: BoxFit.contain),
               ),
-              SizedBox(height: 25),
+              const SizedBox(height: 25),
               Text("Scan QR Untuk Membayar", style: GoogleFonts.poppins(
                 fontWeight: FontWeight.bold, 
                 fontSize: 18),
               ),
-              SizedBox(height: 15),
+              const SizedBox(height: 15),
               Text("Scan QR Code ini menggunakan aplikasi E-wallet Anda",
               style: GoogleFonts.poppins(fontSize: 15, color: Colors.grey[600]),
               textAlign: TextAlign.center,
               ),
-              SizedBox(height: 20),
+              const SizedBox(height: 20),
               Container(
                 height: 50,
                 width: double.infinity,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(20),
-                  color: Color.fromARGB(255, 0, 102, 255),
+                  color: const Color.fromARGB(255, 0, 102, 255),
                 ),
                 child: GestureDetector(
                   onTap: () {
@@ -341,7 +341,7 @@ void _showKKDialog(BuildContext context) {
                         children: [
                           Text("Total Tagihan", style: GoogleFonts.poppins(color:Colors.grey, fontSize: 15),
                           ),
-                          Text("${widget.harga}", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.bold)),
+                          Text(widget.harga, style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.bold)),
         
                         ],
                       )
@@ -352,7 +352,7 @@ void _showKKDialog(BuildContext context) {
                     mainAxisAlignment: MainAxisAlignment. spaceBetween,
                     children: [
                       Text("Nama Pesanan", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
-                      Text("${widget.namaTiket}", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
+                      Text(widget.namaTiket, style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
         
                     ],
                   ),
@@ -361,7 +361,7 @@ void _showKKDialog(BuildContext context) {
                     mainAxisAlignment: MainAxisAlignment. spaceBetween,
                     children: [
                         Text("Jenis Tiket", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
-                        Text("${widget.jenisTiket}", style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
+                        Text(widget.jenisTiket, style: GoogleFonts.poppins(fontSize: 18, fontWeight: FontWeight.w500)),
                     ]
                   ),
                 ],

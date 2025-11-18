@@ -17,7 +17,7 @@ class BuktiPembayaran extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 0, 102, 255),
+      backgroundColor: const Color.fromARGB(255, 0, 102, 255),
       appBar: AppBar(
         title: Text("Bukti Pembayaran", style: GoogleFonts.poppins(
           fontSize: 20,
@@ -28,7 +28,7 @@ class BuktiPembayaran extends StatelessWidget {
       ),
       body: Center(
       child: Padding(
-        padding: EdgeInsets.only(left: 20, right: 20),
+        padding: const EdgeInsets.only(left: 20, right: 20),
         child: Container(
               height: 500,
               width: double.infinity,
@@ -38,11 +38,11 @@ class BuktiPembayaran extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  SizedBox(height: 20),
+                  const SizedBox(height: 20),
                   Container(
                     height: 80,
                     width: 680,
-                    decoration: BoxDecoration(
+                    decoration: const BoxDecoration(
                       shape: BoxShape.circle,
                       color: Color.fromARGB(255, 168, 200, 255),
                     ),
@@ -52,15 +52,15 @@ class BuktiPembayaran extends StatelessWidget {
                       width: 30,)
                     ),
                   ),
-                  SizedBox(height: 15),
+                  const SizedBox(height: 15),
                   Text("Pembayaran Berhasil", style: GoogleFonts.poppins(
                     fontSize: 24,
                     fontWeight: FontWeight.w600,
                   ),
                   ),
-                    SizedBox(height: 10),
+                    const SizedBox(height: 10),
                     Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 20),
+                    padding: const EdgeInsets.symmetric(horizontal: 20),
                     child: Text("Transaksi kamu selesai, Detail pembelian ada dibawah ini",
                     style: GoogleFonts.poppins(
                       fontSize: 16,
@@ -68,13 +68,13 @@ class BuktiPembayaran extends StatelessWidget {
                       textAlign: TextAlign.center
                     ),
                     ),
-                    SizedBox(height: 25),
+                    const SizedBox(height: 25),
                     Container(
                       height: 150,
                       width: 300,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Color.fromARGB(255, 235, 235, 235),
+                        color: const Color.fromARGB(255, 235, 235, 235),
                       ),
                       
                         child: Column(
@@ -85,19 +85,19 @@ class BuktiPembayaran extends StatelessWidget {
                               fontWeight: FontWeight.w600,
                             ),
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Text(jenisTiket, style: GoogleFonts.poppins(
                               fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Text(harga, style: GoogleFonts.poppins(
                               fontSize: 20,
                               fontWeight: FontWeight.w600,
                             ),
                             ),
-                            SizedBox(height: 10),
+                            const SizedBox(height: 10),
                             Text(metodePembayaran, 
                               style: GoogleFonts.poppins(
                                 fontSize: 16,
